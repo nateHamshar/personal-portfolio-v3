@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+.navbar{
+    height: 4rem;
+    background-color: black;
+    border-bottom: 1px solid rgb(23, 23, 23);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.left{
+    margin-left: 2.5%;
+}
+.onLeft{
+    color: goldenrod;
+    text-decoration: none;
+    font-family: 'Lora', serif;
+    font-size: 2rem;
+}
+.right{
+    margin-left: auto;
+    margin-right: 2.5%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.onRight{
+    color: White;
+    text-decoration: none;
+    font-family: 'Lora', serif;
+    font-size: 1.75rem;
+}
+
+.active{
+    text-decoration: underline 3px goldenrod;
+    text-underline-offset: .25rem;
+}
+
+a:hover{
+    cursor: pointer;
+}

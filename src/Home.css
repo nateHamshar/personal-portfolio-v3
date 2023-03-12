@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+/*
+    LANDING SECTION
+*/
+
+.landingSection{
+    display: flex;
+    background-color: black;
+}
+
+.landingTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-right: -7.5%;
+    z-index: 1;
+}
+.landingName, .landingDescription{
+    text-align: end;
+}
+.landingName{
+    font-size: 5rem;
+    font-family: "Cormorant Infant", serif;
+    font-weight: 300;
+    color: white;
+    text-decoration: underline 3px goldenrod;
+    text-underline-offset: 1rem;
+}
+.landingDescription{
+    font-size: 2.5rem;
+    font-weight: 100;
+    font-style: italic;
+    color: white;
+}
+
+.landingImageDiv{
+    height: 600px;
+    width: 612px;
+    margin-right: 20%;
+    padding-top: 5%;
+}
+
+.landingImage{
+    min-height: 100%;
+    width: auto;
+}
+
+
+/*
+    ABOUT ME & TECH SKILLS SECTION
+*/
+
+.aboutSection{
+    background-color: #1a1919;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    border-top: 1px solid silver;
+    border-bottom: 1px solid silver;
+}
+
+.aboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.aboutMeHeader{
+    font-size: 3rem;
+    font-family: 'Lora', serif;
+    font-weight: 100;
+    margin-top: 20%;
+    text-decoration: underline 3px goldenrod;
+    text-underline-offset: .5rem;
+}
+.aboutMeDescription{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-family: 'Cutive Mono', monospace;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-indent: 2rem;
+    line-height: 1.75rem;
+}
+.aboutDivider{
+    content: "";
+    margin: auto auto;
+    height: 500px;
+    width: 1px;
+    background-color: red;
+}
+.techSkills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.techSkillsHeader{
+    text-decoration: underline 3px goldenrod;
+    text-underline-offset: .5rem;
+    font-family: 'Lora', serif;
+    font-weight: 100;
+    font-size: 3rem;
+    margin-top: 20%;
+}
+
+.techSkillItem{
+    margin-top: 1rem;
+    list-style: "<li> ";
+    font-family: 'Cutive Mono', monospace;
+    font-size: 1.5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 1.75rem;
+}
+
+/*
+    MAIN PROJECTS SECTION
+*/
+
+.projectsSection{
+    height: 800px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projectsHeader{
+    margin-top: 5%;
+    color:white;
+    font-size: 4rem;
+    font-family: "Cormorant Infant", serif;
+    font-weight: 300;
+    text-decoration: underline 3px goldenrod;
+    text-underline-offset: .6rem;
+}
+.projectsDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    height: 80%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+.projectCard{
+    border: 2px solid white;
+    height: 400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+}
+
+/*
+    CODE CHALLENGES SECTION
+*/
+
+.challengesSection{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid silver;
+    color:white;
+    padding-bottom: 5%;
+}
+
+.challengesHeader{
+    margin-top: 5%;
+    color:white;
+    font-size: 4rem;
+    font-family: "Cormorant Infant", serif;
+    font-weight: 300;
+    text-decoration: underline 3px goldenrod;
+    text-underline-offset: .6rem;
+}
+
+.challengesDiv{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    height: 80%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.challengeCard{
+    border: 2px solid white;
+    height: 400px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    color:white;
+}
+
+/*
+    FOOTER
+
+*/
+
+footer{
+    content: "";
+    height: 100px;
+    background-color: silver;
+    border-top: 4px solid silver;
+}
