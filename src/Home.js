@@ -24,7 +24,7 @@ const Home = () => {
                 <h1 className="techSkillsHeader">Technical Skills</h1>
                 <ul className="techSkillList">
                     <li className="techSkillItem">Proficiency in HTML, CSS, and Javascript</li>
-                    <li className="techSkillItem">Experience with responsive CSS frameworks like Bootstrap, SASS, and LESS</li>
+                    <li className="techSkillItem">Experience with responsive CSS frameworks including Bootstrap, SASS, and LESS</li>
                     <li className="techSkillItem">Full-stack experience with React, Express, Node, and MongoDB</li>
                     <li className="techSkillItem">Data visualization experience using D3.js, as well as, Chart.js</li>
                     <li className="techSkillItem">Version Control with Git and Github</li>
@@ -62,7 +62,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="projectCard">
-                    <img src={require("./images/loan-image.jpeg")} alt="" className="projectImage" />
+                    <img src={require("./images/business.jpeg")} alt="" className="projectImage" />
                     
                     <div className="projectInfo">
                         <h1 className="projectTitle">Business Tracker</h1>
@@ -80,6 +80,7 @@ const Home = () => {
         <section className="challengesSection">
             <div className="challengesHeader">Coding Challenges</div>
             <div className="challengesDiv">
+
                 <div className="projectCard">
                     <img src={require("./images/fizz-buzz.jpeg")} alt="" className="projectImage" />
                     
@@ -95,7 +96,7 @@ const Home = () => {
                 </div>
 
                 <div className="projectCard">
-                    <img src={require("./images/fizz-buzz.jpeg")} alt="" className="projectImage" />
+                    <img src={require("./images/string-challenge.jpeg")} alt="" className="projectImage" />
                     
                     <div className="projectInfo">
                         <h1 className="projectTitle">String Challenge</h1>
@@ -105,10 +106,39 @@ const Home = () => {
 
                     <div className="projectButtons">
                         <a target="_blank" rel="noreferrer" href="https://github.com/nateHamshar/string-challenge" className="codeButton" >Code</a>
-                        <a target="_blank" rel="noreferrer" href="https://natehamshar.github.io/fizz-buzz/" className="codeButton" >Live</a>
+                        <a target="_blank" rel="noreferrer" href="https://natehamshar.github.io/string-challenge/" className="codeButton" >Live</a>
+                    </div>
+                </div>
+
+                <div className="projectCard">
+                    <img src={require("./images/pokedex-image.jpeg")} alt="" className="projectImage" />
+                    
+                    <div className="projectInfo">
+                        <h1 className="projectTitle">Pokedex</h1>
+                        <p className="projectDescription">This was a fun challenge I did that shows some info about Pokemon. The main concept for this challenge was to practice working with API's, and I decided to use Axios to do it.</p>
+                    </div>
+
+                    <div className="projectButtons">
+                        <a target="_blank" rel="noreferrer" href="https://github.com/nateHamshar/offbrand-pokedex" className="codeButton" >Code</a>
+                        <a target="_blank" rel="noreferrer" href="https://natehamshar.github.io/offbrand-pokedex/" className="codeButton" >Live</a>
+                    </div>
+                </div>
+
+                <div className="projectCard">
+                    <img src={require("./images/money-counting.jpeg")} alt="" className="projectImage" />
+                    
+                    <div className="projectInfo">
+                        <h1 className="projectTitle">Interactive Money Counting</h1>
+                        <p className="projectDescription">Practice your money counting skills with this interactive activity. This challenge is geared towards keeping track of user inputs while they try to reach the goal in as few choices as possible.</p>
+                    </div>
+
+                    <div className="projectButtons">
+                        <a target="_blank" rel="noreferrer" href="https://github.com/nateHamshar/interactive-money-counting" className="codeButton" >Code</a>
+                        <a target="_blank" rel="noreferrer" href="https://natehamshar.github.io/interactive-money-counting/" className="codeButton" >Live</a>
                     </div>
                 </div>
             </div>
+            
         </section>
 
         <footer>
