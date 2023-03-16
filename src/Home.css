@@ -84,7 +84,7 @@
     padding-left: 10%;
     padding-right: 10%;
     text-indent: 2rem;
-    line-height: 1.75rem;
+    line-height: 2rem;
 }
 .aboutDivider{
     content: "";
@@ -149,12 +149,16 @@
     align-items: center;
 }
 .projectCard{
-    border: 2px solid white;
-    height: 400px;
-    width: 100%;
+    border: 1px solid goldenrod;
+    height: 600px;
+    width: 400px;
+    margin-top: 3rem;
     margin-left: auto;
     margin-right: auto;
-    color:white;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
 }
 
 /*
@@ -194,11 +198,68 @@
 
 .challengeCard{
     border: 2px solid white;
-    height: 400px;
-    width: 100%;
+    height: 600px;
+    width: 400px;
     margin-left: auto;
     margin-right: auto;
     color:white;
+}
+
+/*
+    INSIDE OF CARDS
+
+*/
+
+.projectImage{
+    border: 4px solid goldenrod;
+    height: 392px;
+    width: 392px;
+}
+
+.projectInfo{
+    height: 150px;
+}
+
+.projectTitle{
+    font-family: "Cormorant Infant", serif;
+    text-align: center;
+    font-size: 30px;
+}
+
+.projectDescription{
+    font-family: 'Cutive Mono', monospace;
+    font-size: 16px;
+    line-height: 1.25rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.projectButtons{
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.codeButton, .liveButton{
+    width: 80px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: "Cutive Mono", monospace;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.codeButton:hover, .liveButton:hover {
+    color: goldenrod;
+    cursor: pointer;
 }
 
 /*
@@ -209,6 +270,6 @@
 footer{
     content: "";
     height: 100px;
-    background-color: silver;
-    border-top: 4px solid silver;
+    background-color: #1a1919;
+    border-top: 1px solid silver;
 }

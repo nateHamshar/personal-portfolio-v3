@@ -1,36 +1,41 @@
+import { useEffect, useState } from "react"
+import { Link } from "react-router-dom";
 import "./Navbar.css"
 
 const Navbar = () => {
 
-    const homeLink = document.getElementById("home")
-    const resumeLink = document.getElementById('resume')
-    const contactLink = document.getElementById("contact")
+    const [active, setActive] = useState(1);
 
-    const changeActiveLink = (x) => {
-        if (x === "home"){
+ 
+    useEffect(() => {
+        const homeLink = document.getElementById("home")
+        const resumeLink = document.getElementById('resume')
+        const contactLink = document.getElementById("contact")
+
+        if (active === 1){
             homeLink.classList.add("active")
             resumeLink.classList.remove("active")
             contactLink.classList.remove("active")
-        } else if (x === "resume"){
+        } else if (active === 2){
             resumeLink.classList.add("active")
             homeLink.classList.remove("active")
             contactLink.classList.remove("active")
-        } else if (x === "contact"){
+        } else if (active === 3){
             contactLink.classList.add("active")
             resumeLink.classList.remove("active")
             homeLink.classList.remove("active")
         }
-    }
+    }, [active])
 
     return (
         <nav className="navbar">
             <div className="left">
-                <a  className="onLeft">HAMSHAR</a>
+                <Link to="/" className="onLeft" onClick={() => setActive(1)}>HAMSHAR</Link>
             </div>
             <div className="right">
-                <a href="/" id="home" className="onRight active" onClick={() => changeActiveLink("home")}>Home</a>
-                <a href="/" id="resume" className="onRight" onClick={() => changeActiveLink("resume")}>Resume</a>
-                <a href="/" id="contact" className="onRight" onClick={() => changeActiveLink("contact")}>Contact</a>
+                <Link to="/" id="home" className="onRight" onClick={() => setActive(1)}>Home</Link>
+                <Link to="/resume" id="resume" className="onRight" onClick={() => setActive(2)}>Resume</Link>
+                <Link to="/contact" id="contact" className="onRight" onClick={() => setActive(3)}>Contact</Link>
             </div>
         </nav>
     )
