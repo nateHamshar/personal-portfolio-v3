@@ -9,6 +9,7 @@
 .landingSection{
     display: flex;
     background-color: black;
+    overflow: hidden;
 }
 
 .landingTitle{
@@ -123,11 +124,12 @@
 */
 
 .projectsSection{
-    height: 800px;
+    height: auto;
     background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 10%;
 }
 
 .projectsHeader{
@@ -272,4 +274,52 @@ footer{
     height: 100px;
     background-color: #1a1919;
     border-top: 1px solid silver;
+}
+
+
+/* 
+    MEDIA QUERIES 
+
+*/
+
+@media only screen and (max-width: 1420px) {
+    .landingImageDiv{
+        height: 500px;
+        margin-right: 15%;
+    }
+    .projectsDiv, .challengesDiv{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .landingImageDiv{
+        height: 400px;
+        margin-right: -10%;
+    }
+    .projectsDiv, .challengesDiv{
+        grid-template-columns: 1fr 1fr;
+    }
+    .aboutSection{
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    .aboutMeHeader, .techSkillsHeader{
+        margin-top: 10%;
+    }
+
+    .techSkills{
+        padding-bottom: 10%;
+        padding-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .landingImageDiv{
+        height: 400px;
+        margin-right: 0%;
+    }
+    .projectsDiv, .challengesDiv{
+        grid-template-columns: 1fr;
+    }
 }
