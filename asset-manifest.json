@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/personal-portfolio-v3/static/css/main.13629a60.css",
-    "main.js": "/personal-portfolio-v3/static/js/main.7ce523e9.js",
+    "main.js": "/personal-portfolio-v3/static/js/main.d1a80ac5.js",
     "static/media/fizz-buzz.jpeg": "/personal-portfolio-v3/static/media/fizz-buzz.164575a315832a2d0f31.jpeg",
     "static/media/business.jpeg": "/personal-portfolio-v3/static/media/business.9da20aacc329afaa9505.jpeg",
     "static/media/pokedex-image.jpeg": "/personal-portfolio-v3/static/media/pokedex-image.00383f06c5be7c6b8b45.jpeg",
@@ -10,10 +10,10 @@
     "static/media/loan-image.jpeg": "/personal-portfolio-v3/static/media/loan-image.4a400a2066d4f3e92fcc.jpeg",
     "index.html": "/personal-portfolio-v3/index.html",
     "main.13629a60.css.map": "/personal-portfolio-v3/static/css/main.13629a60.css.map",
-    "main.7ce523e9.js.map": "/personal-portfolio-v3/static/js/main.7ce523e9.js.map"
+    "main.d1a80ac5.js.map": "/personal-portfolio-v3/static/js/main.d1a80ac5.js.map"
   },
   "entrypoints": [
     "static/css/main.13629a60.css",
-    "static/js/main.7ce523e9.js"
+    "static/js/main.d1a80ac5.js"
   ]
 }
