@@ -53,11 +53,11 @@ const Home = () => {
                     
                     <div className="projectInfo">
                         <h1 className="projectTitle">Ticket System</h1>
-                        <p className="projectDescription"> A full-stack MERN app that tracks tickets for companies. Uses JSON web tokens for user authentication and authorization. Backend on Render, frontend on GitHub Pages</p>
+                        <p className="projectDescription"> A full-stack MERN app that tracks tickets for companies. Uses JSON web tokens for user authentication and authorization. Backend on Render, frontend on Netlify.</p>
                     </div>
 
                     <div className="projectButtons">
-                        <a target="_blank" rel="noreferrer" href="https://github.com/nateHamshar/ticket-frontend" className="codeButton" >Code</a>
+                        <a target="_blank" rel="noreferrer" href="https://ticketmanagingsystem.netlify.app/" className="codeButton" >Code</a>
                         <a target="_blank" rel="noreferrer" href="https://natehamshar.github.io/ticket-frontend/" className="codeButton" >Live</a>
                     </div>
                 </div>
